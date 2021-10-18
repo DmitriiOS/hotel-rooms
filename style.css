@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%);
+    z-index: -3;
+}
+
+.rooms {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rooms__title {
+    padding-top: 239px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.rooms__row {
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 33px 16px 0px 16px;
+    justify-content: center;
+}
+
+.rooms__item {
+    width: 372px;
+    height: 372px;
+    margin: 16px 16px;
+}
+
+.rooms__item:hover .item__discount {
+    z-index: 0;
+}
+
+.item__gradient {
+    position: absolute;
+    width: 372px;
+    height: 372px;
+    z-index: -1;
+}
+
+.item__image {
+    position: absolute;
+    width: 372px;
+    height: 372px;
+    z-index: -2;
+}
+
+.item__discount {
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 24px;
+    display: flex;
+    z-index: -10;
+}
+
+.discount__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #FF7647;
+    border-radius: 3px 0px 0px 3px;
+    padding: 4px 10px;
+
+}
+
+.item__info {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.item__description-block {
+    margin: 0px 24px 0px 24px;
+    color: #FFFFFF;
+    border-bottom: rgba(255, 255, 255, 0.2) solid 1px;
+}
+
+.item__link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.item__link:hover {
+    text-decoration: underline;
+}
+
+.item__link:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.description__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 9px;
+
+}
+
+.description__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.item__reserved-block {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -7;
+    width: 372px;
+    height: 96px;
+    margin-bottom: 0;
+    background: #3C3E43;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.reserved-block__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.reserved-block__link {
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF4B77;
+}
+
+.reserved-block__link:hover {
+    text-decoration: underline;
+}
+
+.reserved-block__link:active {
+    color: #FF97B0;
+}
+
+.item__price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.price__title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.price__description {
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.price__from {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.price__amount {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FF4B77;
+    margin: 0px 6px;
+}
+
+.price__currency {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.item__button {
+    width: 180px;
+    height: 48px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    background-color: #F91155;
+    border: none;
+    margin-left: 27px;
+    margin-bottom: 24px;
+}
+
+.item__button:hover {
+    background: #D8003F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item__button:active {
+    color: #F9637C;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .rooms__title {
+        padding-top: 27px;
+    }
+
+    .rooms__item {
+        width: 336px;
+        height: 420px;
+        margin: 14px 14px;
+    }
+
+    .item__gradient {
+        position: absolute;
+        width: 336px;
+        height: 420px;
+        z-index: -1;
+    }
+    
+    .item__image {
+        position: absolute;
+        width: 336px;
+        height: 420px;
+        z-index: -2;
+    }
+
+    .item__price-block {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .item__price {
+        margin-left: 24px;
+    }
+
+    .price__description {
+        margin-bottom: 0;
+    }
+
+    .item__button {
+        width: auto;
+        align-self: stretch;
+        margin: 16px 24px 24px 24px;
+    }
+
+    .item__reserved-block {
+        width: 336px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .rooms__title {
+        padding-top: 24px;
+        font-size: 24px;
+    }
+
+    .description__title {
+        font-size: 19px;
+    }
+
+    .description__text {
+        font-size: 14px;
+    }
+
+    .price__title {
+        font-size: 14px;
+    }
+
+    .price__from {
+        font-size: 17px;
+    }
+
+    .price__amount {
+        font-size: 20px;
+    }
+
+    .price__currency {
+        font-size: 20px;
+    }
+
+    .rooms__item {
+        width: 288px;
+        height: 347px;
+        margin: 14px 14px;
+    }
+
+    .item__gradient {
+        position: absolute;
+        width: 288px;
+        height: 347px;
+        z-index: -1;
+    }
+    
+    .item__image {
+        position: absolute;
+        width: 288px;
+        height: 347px;
+        z-index: -2;
+    }
+
+    .item__price-block {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .item__price {
+        margin-left: 21px;
+    }
+
+    .price__description {
+        margin-bottom: 0;
+    }
+
+    .item__button {
+        width: auto;
+        align-self: stretch;
+        margin: 16px 21px 21px 21px;
+        font-size: 14px;
+    }
+
+    .item__reserved-block {
+        width: 288px;
+        height: 149px;
+    }
+
+}

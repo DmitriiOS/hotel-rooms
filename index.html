@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Номера и цены</title>
+</head>
+<body>
+    <div class="page-background"></div>
+    <div class="rooms">
+        <header>
+            <h1 class="rooms__title">Номера и цены</h1>
+        </header>
+    
+        <main class="rooms__row">
+            <section class="rooms__item" onclick="itemClicked(this)" onmouseout="itemQuited(this)">
+                <img class="item__gradient" src="./img/gradient2.png" alt="gradient">
+                <img class="item__image" src="./img/room1.png" alt="image">
+                <div class="item__info">
+                    <div class="item__description-block">
+                        <a class="item__link" href="#"><h3 class="description__title" >Представительский люкс</h3></a>
+                        <p class="description__text">Эксклюзивный номер с панорамным видом на центр города Москвы</p>
+                    </div>
+
+                    <div class="item__price-block">
+                        <div class="item__price">
+                            <p class="price__title">Цена за сутки</p>
+                            <div class="price__description">
+                              <h4 class="price__from">от</h4>
+                              <h3 class="price__amount">7 900</h3>
+                              <p class="price__currency">₽</p>
+                            </div>
+                        </div>
+                        <button class="item__button" onclick="buttonClicked(this)">Забронировать</button>
+                    </div>
+                    <div class="item__reserved-block">
+                        <p class="reserved-block__text">Номер зарезервирован</p>
+                        <p class="reserved-block__text">Перейти к <a class="reserved-block__link" href="#">оплате</a></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="rooms__item" onclick="itemClicked(this)" onmouseout="itemQuited(this)">
+                <img class="item__gradient" src="./img/gradient2.png" alt="gradient">
+                <img class="item__image" src="./img/room2.png" alt="image">
+                <div class="item__discount">
+                    <p class="discount__title">Гарантия лучшей цены</p>
+                    <img class="discount__image" src="./img/icon-discount.png" alt="discount">
+                </div>
+                <div class="item__info">
+                    <div class="item__description-block">
+                        <a class="item__link" href="#"><h3 class="description__title">Дуплекс</h3></a>
+                        <p class="description__text">Просторный двухкомнатный номер с шикарным видом на парк</p>
+                    </div>
+                    <div class="item__price-block">
+                        <div class="item__price price">
+                            <p class="price__title">Цена за сутки</p>
+                            <div class="price__description">
+                              <h4 class="price__from">от</h4>
+                              <h3 class="price__amount">5 700</h3>
+                              <p class="price__currency">₽</p>
+                            </div>
+                        </div>
+                        <button class="item__button" onclick="buttonClicked(this)">Забронировать</button>
+                    </div>
+                    <div class="item__reserved-block">
+                        <p class="reserved-block__text">Номер зарезервирован</p>
+                        <p class="reserved-block__text">Перейти к <a class="reserved-block__link" href="#">оплате</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rooms__item" onclick="itemClicked(this)" onmouseout="itemQuited(this)">
+                <img class="item__gradient" src="./img/gradient2.png" alt="gradient">
+                <img class="item__image" src="./img/room3.png" alt="image">
+                <div class="item__info">
+                    <div class="item__description-block">
+                        <a class="item__link" href="#"><h3 class="description__title">Бизнес-люкс</h3></a>
+                        <p class="description__text">Трёхкомнатный номер с панорамным видом на Москва-реку</p>
+                    </div>
+                    <div class="item__price-block">
+                        <div class="item__price price">
+                            <p class="price__title">Цена за сутки</p>
+                            <div class="price__description">
+                              <h4 class="price__from">от</h4>
+                              <h3 class="price__amount">4 900</h3>
+                              <p class="price__currency">₽</p>
+                            </div>
+                        </div>
+                        <button class="item__button" onclick="buttonClicked(this)">Забронировать</button>
+                    </div>
+                    <div class="item__reserved-block">
+                        <p class="reserved-block__text">Номер зарезервирован</p>
+                        <p class="reserved-block__text">Перейти к <a class="reserved-block__link" href="#">оплате</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
