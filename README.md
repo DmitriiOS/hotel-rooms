@@ -1,0 +1,2 @@
+# hotel-rooms
+adaptive page
